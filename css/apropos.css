@@ -1,0 +1,53 @@
+
+#apropos {
+    display:flex;
+    justify-content: space-between;
+    padding: max(10svh, 1svh) max(2svw, 10svw);
+    align-items: center;
+}
+
+#apropos img{
+    max-height: 19svw;
+    min-height: 9svw;
+}
+
+#apropos p{
+    margin : 2svh 0;
+    max-width: 50svw;
+    color: var(--gris-clair);
+}
+
+@media (max-width: 1100px) {
+
+    #apropos h2{
+        font-size: 8svw;
+    }
+
+    #apropos {
+        flex-direction: column;
+    }
+
+    #apropos img{
+        max-height: 10svw;
+        min-height: 1svw;
+    }
+
+    #apropos p{
+        max-width: 80svw;
+    }
+}
+
+@media (max-width: 1100px) {
+    #apropos p{
+        font-size: 2svh;
+    }
+}
+
+
+
+
+
+
+
+
+

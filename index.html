@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Alicia Courtois - Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/apropos.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="stylesheet" href="css/competence.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/information.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/liens.css">
+</head>
+
+<body>
+
+    <nav id="sidebar">
+        <ul>
+            <li onclick=hideSidebar() ><a href="#"><img src="assets/svg/traverser.svg"></a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#projet">Projet</a></li>
+            <li><a href="#liens">Liens</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <p>Portfolio</p>
+        <ul>
+            <li class="hideOnMobile" ><a href="#accueil">Accueil</a></li>
+            <li class="hideOnMobile" ><a href="#apropos">A propos</a></li>
+            <li class="hideOnMobile" ><a href="#projet">Projet</a></li>
+            <li class="hideOnMobile" ><a href="#liens">Liens</a></li>
+            <li class="hideOnMobile" ><a href="#contact">Contact</a></li>
+            <li class="menu" onclick=showSidebar() ><a href="#"><img src="assets/svg/menu-burger.svg"></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <section id="accueil" class="sectionFixe">
+        <div>
+            <h1>Alicia Courtois</h1>
+            <h2>Développeuse</h2>
+            <p id="description">Étudiante en Licence Informatique à <br>l'Université Paris 8.</p>
+        </div>
+        
+        <div><p id="anneeActuelle">2026-2027</p></div>
+
+        <div id="quart" class="svgAccueil"><img src="assets/svg/quartcircle.svg"></div>
+        <div id="donut" class="svgAccueil"><img src="assets/svg/donut.svg"></div>
+
+    </section>
+
+    <section id="apropos" class="sectionFixe">
+        <div>
+            <h2>À propos de moi</h2>
+            <p>Je suis actuellement étudiante à l’Université Paris 8 en première
+                année de Licence Informatique. Étant diplômée d’un BTS SIO avec 
+                l'option SLAM, j’ai déjà acquis une base solide dans le 
+                développement web.</p>
+            <p>Mon choix de ne pas passer en L3 après mon BTS pour reprendre
+                à partir de la L1 s’explique par mon souhait d’acquérir les 
+                connaissances des deux premières années que je ne possédais
+                pas en sortant de mon BTS.</p>
+            <p>Dans ma vie personnelle, je m'intéresse à d'autres domaines que la programmation.
+                Je dessine souvent en traditionnel (feuille, crayon, feutre) mais aussi en digital 
+                avec un ipad, bien que j'utilisais une tablette graphique avant.
+                Je pratique aussi des activités à plus petite échelle, telles que le piano, le crochet (peluche, protège-livre)
+                ou encore la lecture.
+            </p>
+        </div>  
+        </div>  
+        <div><img src="assets\svg\fleur.svg"></div>
+    </section>
+
+    <section id="experience" class="sectionPasFixe">
+        <h2>Expériences</h2>
+        <div id="experience-flex">
+            <div id="scolarite">
+                <div class="case">
+                    <div class="date">2026<br>-<br>2027</div>
+                    <div>
+                        <h3>L1 Informatique</h3>
+                        <p class="ecole">Université Paris 8 Vincenne - Saint Denis</p>
+                        <p>Option : Jeux Vidéo</p>
+                    </div>
+                </div>
+
+                <div class="trait"></div>
+
+                <div class="case">
+                    <div class="date">2024<br>-<br>2026</div>
+                    
+                    <div>
+                        <h3>BTS SIO</h3>
+                        <p class="ecole">Lycée Saint Aspais, Melun</p>
+                        <p>Option : SLAM</p>
+                    </div>
+                </div>
+                <div class="trait"></div>
+
+                <div class="case">
+                    <div class="date">2024</div>
+                    <div>
+                        <h3>Baccalauréat</h3>
+                        <p class="ecole">Lycée Pierre Mandes France, Savigny-le-Temple</p>
+                        <p>Spécialités : Mathématiques et Science de la Vie et de la Terre.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stage">
+                <h3>Stages</h3>
+                <div id="stagedescription">J’ai réalisé un stage par an durant mon BTS SIO afin de le
+                valider. Les deux étaient dans le domaine du développement web.</div>
+                <div id="stages">
+                    <div class="stage" id="liloetsite">
+                        <div class="entreprise">Lïlo et Site</div>
+                        <p>Mission : Conception d'un site de e-commerce.</p>
+                        <ul>
+                            <li>JavaScript, React, Git et Github</li>
+                            <li>Utilisation de AWS (Amazon Web Services)</li>
+                            <li>Résolution de problèmes informatiques</li>
+                        </ul>
+                    </div>
+
+                    <div class="stage" id="niakniakkadric">
+                        <div class="entreprise">Niak Niak Kadric</div>
+                        <p>Mission : Conception d'un site de e-commerce.</p>
+                        <ul>
+                            <li>PHP, HTML/CSS, Git et Github</li>
+                            <li>Conception de maquettes, BDD, front-end du site web</li>
+                            <li>Conception de cahier des charges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/svg/vague.svg" id="svg-stage">
+        
+    </section>
+
+    <section id="competence" class="sectionPasFixe">
+        <h2>Compétences</h2>
+
+        <div id="competence-flex">
+
+            <div class="competence">
+                <h3>HTML/CSS</h3>
+                <ul>
+                    <li>Structuration sémantique des pages HTML</li>
+                    <li>Conception de maquettes web</li>
+                    <li>Mise en page Responsive (Flexbox et Grid)</li>
+                    <li>Création d'interfaces ergonomiques et claires</li>
+                </ul>
+            </div>
+
+            <div class="competence">
+                <h3>PHP</h3>
+                <ul>
+                    <li>Création de pages web dynamiques</li>
+                    <li>Mise en place d'un CRUD</li>
+                    <li>Gestion des sessions, authentification des utilisateurs</li>
+                    <li>Gestion des formulaires</li>
+                </ul>
+            </div>
+
+            <div class="competence">
+                <h3>SQL</h3>
+                <ul>
+                    <li>Conception de Bases de données</li>
+                    <li>Création et gestion des tables</li>
+                    <li>Requêtes SQL</li>
+                    <li>Liaison base de données / site web</li>
+                </ul>
+            </div>
+
+            <div class="competence">
+                <h3>Linux</h3>
+                <ul>
+                    <li>Utilisation d'un système Linux sur machine virtuelle</li>
+                    <li>Commande de base Linux</li>
+                    <li>Installation et configuration de services simple</li>
+                    <li>(Apache, MySQL)</li>
+                </ul>
+            </div>
+
+            <div class="competence">
+                <h3>Python</h3>
+                <ul>
+                    <li>Programmation algorithmique</li>
+                    <li>Manipulation de variables, boucles, conditions</li>
+                    <li>Résolution de problèmes</li>
+                </ul>
+            </div>
+
+            <div class="competence">
+                <h3>Github</h3>
+                <ul>
+                    <li>Gestion de versions</li>
+                    <li>Création de dépôts</li>
+                    <li>Gestion des sauvegardes</li>
+                    <li>Travail en groupe</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="infoETmateriel" class="sectionFixe">
+        <div id="certification">
+            <h2>Certifications</h2>
+
+            <div class="certifications">
+                <img src="assets/img/anssi.jpg">
+                <p>MOOC de l'ANSSI - SecNumacadémie</p>
+            </div>
+
+            <div class="certifications">
+                <img src="assets/img/pix.png">
+                <p>Niveau : Indépendant 2</p>
+            </div>
+        </div>
+        <div id="materiel">
+            <h2>Matériels et Logiciels</h2>
+            <h3>Matériels</h3>
+            <ul>
+                <li>Ordinateur : ASUS Vivobook 17X</li>
+                <li>Ipad : ipad air</li>
+                <li>J'avais une tablette graphique mais un problème de fabrication l'a rendue inutilisable</li>
+            </ul>
+            <h3>Logiciels</h3>
+            <ul>
+                <li>Procreate</li>
+                <li>Clip Studio Paint</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section id="projet" class="sectionPasFixe">
+        <h2>Projets</h2>
+        <div id="projet-flex">
+            <div class="projets">
+                <h3>Cafeteria</h3>
+                <p>Description : Création d'un site web de réservation de repas pour étudiants et pour la gestionnaire.<br>
+                    Gestion des stocks et du menu. 
+                </p>
+                <p>Outils: HTML/CSS, PHP, Github </p>
+                <p>Méthodes : CRUD</p>
+                <p>Travail de Groupe : Trio</p>
+                <p>Dans le cadre de mon BTS SIO.</p>
+
+            </div>
+
+            <div class="projets">
+                <h3>Ticket</h3>
+                <p>Description : Création d'un site web de tickets d'incidents.<br>
+                    Gestion des stocks et du menu. 
+                </p>
+                <p>Outils: HTML/CSS, PHP, Github</p>
+                <p>Méthodes : CRUD</p>
+                <p>Travail de Groupe : Trio</p>
+                <p>Dans le cadre de mon BTS SIO.</p>
+            </div>
+
+            <div class="projets">
+                <h3>Portfolio Version 1</h3>
+                <p>Description : Création d'un site web de présentation professionel.</p>
+                <p>Outils: HTML/CSS</p>
+                <p>Travail de Groupe : non</p>
+                <p>Dans le cadre de mon BTS SIO.</p>
+            </div>
+
+            <div class="projets">
+                <h3>Jeux d'apprentissage Unity</h3>
+                <p>Description : Création d'un jeu 2D.</p>
+                <p>Outils: Unity, documentation Unity</p>
+                <p>Travail de Groupe : non</p>
+                <p>Dans le cadre d'un apprentissage personnel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="liens" class="sectionPasFixe">
+        <div id="cadre-lien">
+            <h2>Liens</h2>
+            <div id="liens-flex">
+                <div id="documentation-lien">
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML">HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS">CSS</a></li>
+                        <li><a href="https://www.php.net/">PHP</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">Java Script</a></li>
+                        <li><a href="https://www.w3schools.com/sql/">SQL</a></li>
+                    </ul>
+                </div>
+
+                <div id="logiciels-lien" >
+                    <h3>Logiciels et Sites</h3>
+                    <ul>
+                        <li><a href="https://github.com/">Github</a></li>
+                        <li><a href="https://godotengine.org/fr/">Godot</a></li>
+                        <li><a href="https://unity.com/fr">Unity</a></li>
+                    </ul>
+
+                </div>
+
+                <div id="portfolio">
+                    <h3>Portfolio</h3>
+                    <ul id="portfolio-liste">
+                        <li>
+                            <a href="https://aliciacourtois.github.io/Portfolio/">Portfolio Version 1
+                            <p>Contexte : BTS SIO</p></a>
+                        </li>
+                        <li>
+                             <a href="https://aliciacourtois.github.io/portfolio-SIO/">Portfolio Version 2
+                            <p>Contexte : BTS SIO</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="sectionFixe">
+
+            <div id="color-contact">
+                <h2>Contactez moi !</h2>
+                <p>Vous pouvez me contacter via mon email :</p>
+                <p>alicia.courtois22@gmail.com</p>
+                <h3>Mes réseaux :</h3>
+                <ul>
+                    <li><a href="https://github.com/AliciaCourtois">Github <img src="assets/svg/github.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/alicia-courtois-073254359/">LinkedIn <img src="assets/svg/linkedin.svg"></a></li>
+                </ul>
+            </div>
+
+            <div id="img-contact">
+                <img src="assets/svg/vaguecontact.svg">
+            </div>
+
+        
+    </section>
+    <section id="modif">
+        <p>Alicia Courtois - Dernière Modifications : 20 novembre 2026</p>
+    </section>
+</body>
+</html>

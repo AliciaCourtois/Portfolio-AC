@@ -1,0 +1,176 @@
+
+#experience{
+    padding: 5svh min(10svw);
+    position: relative;
+}
+
+#experience-flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#scolarite{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+#experience h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10svh;
+}
+
+#experience p{
+    font-size: 2svh;
+}
+
+.date{
+    width: 6em;
+    height: 6em;
+    border-radius: 0.3rem;
+    background-color: var(--blanc);
+    color: var(--noir);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 600;
+    line-height: 0.9;
+    text-align: center;
+    font-size: 2svh;
+}
+
+.case{
+    box-sizing: border-box;
+    padding: 4svh 0svw 4svh 1em;
+    width: clamp(28em, 100%, 32em);
+    height: 7em;
+    border: 3px solid var(--bleu);
+    border-radius: 1rem;
+    display:flex;
+    align-items: center;
+    gap : 1em;
+    background-color: var(--noir);
+    
+}
+
+.trait{
+    height: 5svh;
+    width: 0.2em;
+    background: linear-gradient(180deg, var(--bleu), var(--violet));
+}
+
+#stagedescription{
+    font-size: 2svh;
+}
+
+/*Stage*/
+
+#svg-stage{
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 35%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#stage{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 10;
+    position: relative;
+    background-color: var(--blanc);
+    color: var(--noir);
+    border-radius: 0.5rem;
+    height: 62svh;
+    width: clamp(28em, 100%, 32em);
+    box-sizing: border-box;
+    padding: 4svh;
+}
+
+.stage{
+    background-color: var(--gris-super-clair);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 2svh;
+    margin-top: 2svh;
+}
+
+#stage h3{
+    font-size: 4svh;
+    display:flex;
+    justify-content:center;
+    padding: 0 0 0.6rem 0;
+}
+
+.entreprise{
+    font-size: 3svh;
+    font-weight: 600;
+}
+
+#stagedescription{
+    max-width: 85svw;
+}
+
+#stage ul li{
+    font-size: 2svh;
+}
+
+/*Responsive*/
+
+@media (max-width: 725px){
+    .case{
+        width: 90svw;
+        height: 17svh;
+    }
+
+    #experience h3{
+        font-size: 3svh;
+    }
+
+    #stagedescription{
+        font-size: 1.7svh;
+    }
+
+    #experience p{
+        font-size: 1.7svh;
+        max-width: 58svw;
+    }
+
+    #stage ul li{
+        font-size: 1.7svh;
+    }
+}
+
+@media (max-width: 1430px){
+
+    #experience-flex{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 650px){
+
+    #stage{
+        max-width: 85svw;
+    }
+
+}
+
+@media (max-width: 260px){
+    #stage{
+        max-width: 95svw;
+        padding: 2svh;
+        font-size: 1.5svh;
+    }
+}

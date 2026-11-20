@@ -1,0 +1,83 @@
+
+#infoETmateriel{
+    padding: 15svh min(10svw);
+    display: flex;
+    gap: 5svw;
+}
+
+#infoETmateriel h2{
+    display: flex;
+    justify-content: center;
+}
+
+.certifications img{
+    width: 8svw;
+    border-radius: 1.2rem;
+    margin-bottom: 3svh;
+}
+
+.certifications{
+    display: flex;
+    align-items: center;
+    gap: 2svw;
+}
+
+
+#certification{
+    width: 30svw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#materiel{
+    background-color: var(--blanc);
+    color: var(--noir);
+    border-radius: 1rem;
+    width: 50svw;
+    box-sizing: border-box;
+    padding: 5svh 5svw;
+}
+
+#materiel h2{
+    font-size: 3svw;
+}
+
+#materiel h3{
+    border: 3px solid var(--bleu);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 2svh 0;
+}
+
+@media (max-width: 1130px){
+    #infoETmateriel {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #materiel{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #certification{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .certifications{
+        display: flex;
+        width: 100%;
+    }
+
+    #materiel h2{
+       font-size: 3.5svh;
+       margin-bottom: 1rem;
+    }
+}

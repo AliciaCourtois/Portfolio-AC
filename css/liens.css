@@ -1,0 +1,47 @@
+
+#liens{
+    padding: 10svh min(10svw);
+    color: var(--noir);
+    display: flex;
+}
+
+#cadre-lien{
+    background-color: var(--blanc);
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 5svh 3vw;
+}
+
+#liens h2{
+    margin-bottom: 2svh;
+}
+
+#liens h3{
+    margin-bottom: 2svh;
+}
+
+#liens-flex{
+    padding: 4.5svh 3svw;
+    border : 5px solid var(--bleu);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0rem;
+}
+
+#liens ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    padding-left: 2svw;
+}
+
+#liens ul li:hover{
+    color: var(--bleu);
+}
+
+#portfolio-liste p{
+    font-size: 1.8svh;
+}
+

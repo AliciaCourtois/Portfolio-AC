@@ -1,0 +1,37 @@
+#projet{
+    padding: 10svh min(10svw);
+}
+
+#projet-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3svh 1.5svw;
+    justify-content: center;
+}
+
+.projets{
+    border: 2px solid var(--bleu);
+    width: 30svw;
+    padding: 5svh 3svw;
+    min-width: 22em;
+}
+
+.projets p{
+    font-size: 2svh;
+}
+
+#projet h3{
+    margin-bottom: 1svh;
+}
+
+@media (max-width: 560px){
+    .projets{
+        padding: 3svh 5svw;
+        box-sizing: border-box;
+    }
+    .projets p{
+        font-size: 1.8svh;
+    }
+
+}
+

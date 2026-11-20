@@ -1,0 +1,106 @@
+
+#accueil {
+    background-color: var(--blanc);
+    color: var(--noir);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; /*!!! empêche que le padding change la taille de la section*/
+    padding: 8svh 6svw 1svh 6svw;
+}
+
+#accueil h1{
+    font-size: 8.5svw;
+}
+
+#accueil h2{
+    font-weight: 600;
+    letter-spacing: 1svw;
+    font-size: 3.5svw;
+    margin-bottom: 2.5svh;
+}
+
+#description {
+    color: var(--gris);
+    font-size: 2.3svw;
+    font-weight: 600;
+    letter-spacing: 0.3svw;
+}
+
+#anneeActuelle {
+    border: 3px solid var(--bleu);
+    border-radius :5rem;
+    margin-bottom: 5svh;
+    display: inline-block;
+    padding: 0.2rem 2.2rem;
+    font-size: 1.5svw;
+}
+
+/*Images de Accueil*/
+
+.svgAccueil {
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+
+.svgAccueil img{
+    display:flex;
+    width : 100%;
+}
+
+#quart img{
+    max-height: 73vh;
+    min-height: 73vh;
+}
+
+#donut img{
+    max-height: 88vh;
+    min-height: 88vh;
+}
+
+/*Responsive*/
+
+@media(max-width: 850px){
+    #quart img{
+        max-height: 55vh;
+        min-height: 25vh;
+        
+    }
+
+    #donut img{
+        max-height: 65vh;
+        min-height: 15vh;
+    }
+
+    #accueil h1{
+        font-size: 11svw;
+    }
+
+    #accueil h2{
+        font-size: 5.5svw;
+        margin-bottom: 2svh;
+    }
+
+    #description {
+        font-size: 3.3svw;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    #accueil {
+        justify-content:flex-start;
+    }
+
+    #anneeActuelle {
+        border: 2px solid var(--bleu);
+        font-size: min(2svw);
+        margin-top : 1rem;
+        
+    }
+
+}
+
+

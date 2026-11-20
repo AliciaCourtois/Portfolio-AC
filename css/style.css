@@ -1,0 +1,79 @@
+:root {
+  /* Couleurs */
+  --blanc:        #fafafa;
+  --noir:         #1e1c1c;
+  --noir-clair:   #292626;
+  --violet:       #5d448b;
+  --bleu:         #97b1d4;
+  --gris:         #726e6e;
+  --gris-clair:   #c2c2c2;
+  --gris-super-clair: #e0e0e0;
+
+  --titres: 'Inter', sans-serif;
+
+}
+
+/*Remetre à zero le site*/
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  min-height:100svh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--noir);
+  font-size: 2.5svh;
+  color: var(--blanc)
+}
+
+h1,h2,h3 {
+  font-family: 'Inter', sans-serif;
+}
+
+h2{
+  font-size: 6.5svh;
+  margin-bottom: 5svh;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.sectionFixe {
+  height: calc(100svh - 8vh);
+  box-sizing: border-box; /*!!! empêche que le padding change la taille de la section*/
+}
+
+.sectionPasFixe {
+  min-height: calc(100svh - 8vh);
+  box-sizing: border-box; /*!!! empêche que le padding change la taille de la section*/
+}
+
+#modif p{
+  display: flex;
+  font-size: 2svh;
+  justify-content: center;
+  padding: 1svh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
